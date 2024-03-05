@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Slider</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+    
+.slider-box {
+    width: 75%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: #f2f2f2;
+}
+
+
+.slider {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.slide:hover {
+  transform: translateX(-25%);
+}
+
+.movie-details {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+  transform: translateX(100%);
+}
+
+.slide:hover .movie-details {
+  transform: translateX(75%);
+}
+
+.movie-details h3 .movie-details p {
+  margin: 0;
+}
+
+.watch-now-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
+.watch-now-btn:hover {
+  background-color: #666;
+}
+
+
+</style>
+<body>
+    
+  <div class="slider-box">
+    <div class="slider">
+      <div class="slide">
+        <img src="/Images/Miles.jpg" alt="Movie Poster 2">
+        <div class="movie-details">
+          <h3 class="movie-name">Spider-Man: Across the SpiderVerse</h3>
+          <p class="movie-genre">Genre</p>
+          <p class="movie-year">Year</p>
+          <p class="movie-description">Movie Description</p>
+          <a class="watch-now-btn" href="#">Watch Now</a>
+        </div>
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+  </div>
+
+  <!-- Rest of your website content goes here -->
+
+</body>
+</html>

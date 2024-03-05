@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    .grid-container {
+  display: flex;
+  flex-direction: row;
+  height: 400px; /* Adjust the height as needed */
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #888888 #f0f0f0;
+}
+
+.grid-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.movie-card {
+  flex: 0 0 auto;
+  width: 250px; /* Adjust the card width as needed */
+  margin-right: 10px; /* Adjust the margin between cards as needed */
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.movie-details:hover {
+  transform: translateY(-50%);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.movie-details {
+  padding: 10px;
+}
+
+.movie-details h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.movie-details p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Scrollbar styles */
+.grid-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.grid-container::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.grid-container::-webkit-scrollbar-thumb {
+  background-color: #888888;
+  border-radius: 4px;
+}
+
+</style>
+<body>
+    <div class="grid-container">
+        <div class="grid-row">
+          <div class="movie-card">
+            <img src="/Images/HomeVer/Avatar.jpg" alt="Movie Poster">
+            <div class="movie-details">
+              <h3>Movie Name</h3>
+              <p>Year of Release</p>
+              <p>Duration</p>
+            </div>
+          </div>
+          <!-- Add more movie cards here -->
+        </div>
+        <div class="grid-row">
+          <div class="movie-card">
+            <img src="/Images/HomeVer/Flash.jpg" alt="Movie Poster">
+            <div class="movie-details">
+              <h3>Movie Name</h3>
+              <p>Year of Release</p>
+              <p>Duration</p>
+            </div>
+          </div>
+          <!-- Add more movie cards here -->
+        </div>
+        <div class="grid-row">
+            <div class="movie-card">
+              <img src="/Images/HomeVer/Flash.jpg" alt="Movie Poster">
+              <div class="movie-details">
+                <h3>Movie Name</h3>
+                <p>Year of Release</p>
+                <p>Duration</p>
+              </div>
+            </div>
+            <!-- Add more movie cards here -->
+          </div>
+          <div class="grid-row">
+            <div class="movie-card">
+              <img src="/Images/HomeVer/Flash.jpg" alt="Movie Poster">
+              <div class="movie-details">
+                <h3>Movie Name</h3>
+                <p>Year of Release</p>
+                <p>Duration</p>
+              </div>
+            </div>
+            <!-- Add more movie cards here -->
+          </div>
+    </div>
+      
+      
+</body>
+</html>
